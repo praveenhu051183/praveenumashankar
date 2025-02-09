@@ -10974,20 +10974,22 @@ section.resume-section .resume-section-content {
 
 #recommendations {
     clear: both; /* Prevents overlapping */
+	
     padding-bottom: 50px; /* Adds space between sections */
 }
 
 
-#blog {
-    margin-top: 50px; /* Adjust as needed */
+ #blog {
+    margin-top: 50px;  
     padding-top: 50px;
-}
+} 
 
-/* Blog Section Styling */
+/* Blog Section Styling 
 #blog {
     padding: 5rem 0;
 }
 
+*/
 .blog-container {
     text-align: center;
 }
