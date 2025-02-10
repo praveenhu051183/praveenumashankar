@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container for the blog */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: 250px;
+      padding-right: 30px;
+      border-right: 1px solid #e9ecef;
+    }
+
+    .sidebar h3 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      color: #343a40;
+      font-size: 0.95rem;
+    }
+
+    .sidebar ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    .main-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin-bottom: 40px;
+    }
+
+    .main-content h2 {
+      font-size: 1.75rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .main-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      .main-content {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+      <p><a href="resume.html">← Back to Resume</a></p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Blog Title -->
+      <h1>My First Blog Post</h1>
+
+      <!-- Blog Metadata -->
+      <div class="meta">
+        <span>By Your Name</span> | <span>October 2023</span>
+      </div>
+
+      <!-- Blog Content -->
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Welcome to my first blog post! I'm excited to share my thoughts and experiences with you. 
+        Writing has always been a passion of mine, and I'm thrilled to finally start this journey.
+      </p>
+      <p>
+        In this blog, I'll be discussing [insert topic here]. Whether you're a seasoned professional 
+        or just starting out, I hope you find something valuable here.
+      </p>
+
+      <h2 id="section1">Section 1</h2>
+      <p>
+        This is the first section of my blog. Here, I'll dive deeper into the topic and share some 
+        insights I've gained over the years.
+      </p>
+      <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+
+      <h2 id="section2">Section 2</h2>
+      <p>
+        This is the second section of my blog. I'll wrap up my thoughts and provide some actionable 
+        takeaways for you to implement in your own work or life.
+      </p>
+      <p>
+        Stay tuned for more updates, and feel free to reach out if you have any questions or suggestions. 
+        Let's learn and grow together!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
