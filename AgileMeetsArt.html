@@ -1,179 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-      color: #343a40;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agile Meets Art: A Product Management Approach to Crafting a Pooja Mandir. Learn how Agile principles were applied to build a mandir.">
+    <meta name="author" content="Praveen">
+    <meta name="keywords" content="Agile, Product Management, Pooja Mandir, DIY, Blog, Crafting, Hindu, Prayer Altar, Project Management">
+    <meta name="date" content="2025-02-10">
+    <title>Agile Meets Art: Crafting a Pooja Mandir with Agile Methodologies</title>
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin-top: 60px;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
 
-    /* Container for the blog */
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
 
-    /* Left Sidebar */
-    .sidebar {
-      width: 250px;
-      padding-right: 30px;
-      border-right: 1px solid #e9ecef;
-    }
+        .meta-info {
+            color: #aaa;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
 
-    .sidebar h3 {
-      font-size: 1.25rem;
-      margin-bottom: 15px;
-      color: #007bff;
-    }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 15px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+        .content h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #343a40;
+        }
 
-    .sidebar ul li {
-      margin-bottom: 10px;
-    }
+        .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #495057;
+        }
 
-    .sidebar ul li a {
-      color: #343a40;
-      font-size: 0.95rem;
-    }
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
 
-    .sidebar ul li a:hover {
-      color: #007bff;
-    }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    /* Main Content */
-    .main-content {
-      flex: 1;
-      padding-left: 30px;
-    }
+        .navbar {
+            background-color: #343a40;
+        }
 
-    .main-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #007bff;
-    }
+        .navbar-brand {
+            color: white;
+            font-weight: 700;
+        }
 
-    .meta {
-      font-size: 0.9rem;
-      color: #6c757d;
-      margin-bottom: 40px;
-    }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
 
-    .main-content h2 {
-      font-size: 1.75rem;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #007bff;
-    }
+        .navbar-nav .nav-link:hover {
+            color: #ccc;
+        }
 
-    .main-content p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
+        .btn-custom {
+            background-color: #17a2b8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
 
-    .main-content img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px 0;
-      border-radius: 8px;
-    }
+        .btn-custom:hover {
+            background-color: #138496;
+        }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #aaa;
+            padding: 20px;
+        }
 
-      .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #e9ecef;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
 
-      .main-content {
-        padding-left: 0;
-      }
-    }
-  </style>
+        footer a:hover {
+            color: #17a2b8;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <!-- Left Sidebar -->
-    <div class="sidebar">
-      <h3>Table of Contents</h3>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-      </ul>
-      <p><a href="resume.html">← Back to Resume</a></p>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Praveen's Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#all-blogs">All Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
-    <div class="main-content">
-      <!-- Blog Title -->
-      <h1>My First Blog Post</h1>
+    <header>
+        <h1>Agile Meets Art: Crafting a Pooja Mandir with Agile Methodologies</h1>
+        <p class="meta-info">By Praveen | February 10, 2025 | Category: Agile, Project Management</p>
+    </header>
 
-      <!-- Blog Metadata -->
-      <div class="meta">
-        <span>By Your Name</span> | <span>October 2023</span>
-      </div>
+    <div class="content">
+        <p>As a Product Owner (PO) with years of experience in digital solutions, I’ve learned to navigate the complexities of product development through Agile methodologies. But recently, I had the opportunity to apply those same skills to an unexpected project—building a Pooja Mandir (a Hindu prayer altar). A special thanks to my friend Mayur Halakatti, a Senior Director and Head of Regulatory Reporting Practice in the financial sector, who brought up the idea and initiated the project, inspiring both of us to embark on this meaningful journey of crafting not one, but two mandirs—one for myself and another for him.</p>
 
-      <!-- Blog Content -->
-      <h2 id="introduction">Introduction</h2>
-      <p>
-        Welcome to my first blog post! I'm excited to share my thoughts and experiences with you. 
-        Writing has always been a passion of mine, and I'm thrilled to finally start this journey.
-      </p>
-      <p>
-        In this blog, I'll be discussing [insert topic here]. Whether you're a seasoned professional 
-        or just starting out, I hope you find something valuable here.
-      </p>
+        <p>Along with Mayur, we combined our professional expertise to create something special, and in the process, applied Agile thinking to what is often considered a purely creative and manual task.</p>
 
-      <h2 id="section1">Section 1</h2>
-      <p>
-        This is the first section of my blog. Here, I'll dive deeper into the topic and share some 
-        insights I've gained over the years.
-      </p>
-      <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+        <p>This blog will explore how we applied Agile principles to our DIY mandir project. While there are plenty of resources online—blogs, YouTube videos, and tutorials—on how to build a mandir, I’m here to share how Agile methods influenced our approach and how our professional experiences guided us throughout the process.</p>
 
-      <h2 id="section2">Section 2</h2>
-      <p>
-        This is the second section of my blog. I'll wrap up my thoughts and provide some actionable 
-        takeaways for you to implement in your own work or life.
-      </p>
-      <p>
-        Stay tuned for more updates, and feel free to reach out if you have any questions or suggestions. 
-        Let's learn and grow together!
-      </p>
+        <h2>Phase 1: Research & Ideation (Discovery Phase)</h2>
+        <p>The first step in any product development process is understanding the problem and doing the necessary research. Just like with any new product, we began by researching different types of Pooja Mandirs. We scoured blogs, YouTube videos, and DIY websites to gather ideas. This phase of discovery mirrors the early stages of Agile, where we take the time to understand the market (or user needs) and gather all available inputs before committing to a solution.</p>
+
+        <p>After reviewing various designs, we settled on one that best fit our needs. However, we realized that some changes would be necessary to accommodate our unique requirements, such as increasing the number of levels on the mandir from two to three. In Agile, this step would be like defining the user stories and identifying the features that will satisfy customer needs. The collaborative nature of our process, fueled by both of our problem-solving and analytical skills, ensured that we defined the best solution for our mandirs.</p>
+
+        <h2>Phase 2: Planning & Design (Sprint 0)</h2>
+        <p>Once we had our base design, we moved to the planning phase. This is where we mapped out the specifics of what our mandir would look like and what materials we’d need. Much like Sprint 0 in Agile, we laid the groundwork for the project: defining the scope, identifying resources, and setting clear objectives.</p>
+
+        <p>One of the biggest changes we made to the design was adding extra security for the top crown moulding on my mandir, as it needed to be relocated to another state. This change involved additional planning to ensure the mandir could withstand transportation. This is an example of how requirements evolve, just like in product development when scope changes as new information emerges. At this stage, we also determined how much time we could spend on the project each day and figured out where we would build the mandir (location setup).</p>
+
+        <p>Additionally, managing the budget was a key part of this phase. Initially, we had planned to use certain materials that fit our needs, but when we went to purchase them, we realized that some of the items were out of stock or over budget. Instead of going over our planned budget, we identified alternative materials that were more affordable. Sometimes, these alternatives came at a higher cost than we anticipated, but in other cases, we found reasonable substitutes that kept us within our budget. This taught us the importance of being adaptable and cost-conscious—staying on track while maintaining quality.</p>
+
+        <p>We also built flexibility into the design, allowing for future enhancements. For example, we intentionally left space to hang bells in the mandir, which we later imported from India. This flexibility is a key principle in Agile, where future user needs and enhancements are anticipated and incorporated into the product roadmap.</p>
+
+        <p>With our combined expertise in managing budgets, aligning project goals, and making decisions quickly under pressure, we were able to adapt and keep the project moving forward efficiently. Our focus on the overall objective, without getting stuck on minor setbacks, helped us make thoughtful, timely decisions in line with the Agile principles of iterative progress.</p>
+
+        <h2>Phase 3: Execution (Sprint 1)</h2>
+        <p>With our plan in place, it was time to begin building the mandir. This is where the real work began. In Agile, we break projects into smaller, manageable tasks called sprints, and the same approach applied here. We broke down the overall project into smaller pieces—building the structure, adding the decorative elements, and ensuring the security features were properly integrated.</p>
+
+        <p>However, just like in Agile development, we encountered some challenges. For example, the nails we had didn’t fit the mould, and some materials (like the legs for the mandir) didn’t arrive on time. These hiccups are common in product development, and we had to remain flexible. Instead of stopping the project entirely, we adjusted by working on other elements that were unaffected by the missing parts. This is much like how Agile teams pivot and re-prioritize work when unexpected obstacles arise.</p>
+
+        <p>As mentioned, there were moments when material shortages or price increases forced us to identify alternative solutions. We were able to find replacement products that, while slightly more expensive, ensured the quality and stability of the mandir. This taught us the importance of being adaptable and cost-conscious—staying on track while maintaining quality.</p>
+
+        <p>We also thought ahead and considered possible features that we could add later to improve the functionality of the mandir. An idea we had was to install smart RGB lights inside the mandir to give it a modern touch. Although this wasn’t part of the original plan, we found a way to incorporate this enhancement by ensuring that there was space and wiring available to support the smart lighting system. This is a great example of how Agile encourages continuous improvement and flexibility during execution, making room for incremental changes and new ideas as the project progresses.</p>
+
+        <p>Our ability to tackle these challenges was strengthened by our experience in managing product timelines, collaborating effectively, and keeping the customer needs at the forefront of our decisions. The skills we’ve honed in our professional careers allowed us to keep the project on track, even when faced with supply chain issues or unexpected obstacles.</p>
+
+        <h2>Phase 4: Testing & Adjustments (Sprint Review and Retrospective)</h2>
+        <p>Once the mandir started taking shape, we began testing and reviewing the work to ensure everything was coming together. In Agile, this phase is often referred to as the sprint review and retrospective. During this phase, teams assess the progress, identify what’s working well, and make necessary adjustments.</p>
+
+        <p>As we went through the review process, we discovered that some elements of the design didn’t work as expected, or they needed further refinements. For example, the security features we added for transportation needed to be fine-tuned. We took a step back, identified the issues, and made improvements, ensuring that the final product was both beautiful and practical.</p>
+
+        <p>The retrospective mindset, which focuses on continuous improvement, was instrumental in ensuring that we didn’t just build a mandir, but a mandir that met our needs and expectations.</p>
+
+        <h2>Phase 5: Final Delivery & Celebration (Release)</h2>
+        <p>After weeks of hard work, it was finally time to deliver the finished mandir. In Agile, this phase is similar to a product release, where the product is officially completed and ready for use. We successfully completed both mandirs, meeting our deadlines and making sure everything was in place. My relocation meant there was a hard deadline, and just like in any product launch, we had to make sure we delivered on time.</p>
+
+        <p>The completion of this project was a moment of celebration. Both Mayur and I were proud of what we had accomplished together, combining our unique skills to create something special. It was a success, not only in terms of craftsmanship but also in the way we applied our Agile mindset throughout the process.</p>
+
+        <p>The completed mandir represents not just the physical result of our hard work but also the product of applying Agile principles in a non-traditional setting. It’s a reflection of how planning, adaptability, and continuous improvement come together to deliver a beautiful, functional, and meaningful final product.</p>
+
+        <h2>Lessons Learned</h2>
+        <p>Looking back at the project, I can see how our combined experience in Agile and business analysis, along with Mayur’s background in IT risk management, helped us navigate this challenge. In Agile, we continuously adapt and improve, and that mindset was essential when building the mandir. We had to stay flexible, prioritize tasks, and ensure that we met our deadlines—skills that are just as crucial in the world of digital product development as they are in carpentry and design.</p>
+
+        <p>Interestingly, both of us were working outside of our comfort zones—while I brought my experience in product ownership and business analysis, Mayur contributed his expertise in risk management. Together, we managed the project, ensuring that we leveraged our combined skills to deliver a successful result.</p>
+
+        <h2>Conclusion</h2>
+        <p>In conclusion, the process of building a Pooja Mandir was a unique and valuable opportunity to apply Agile methodologies outside of a traditional product development setting. It reinforced how Agile can be adapted to various kinds of projects, whether you're building software or crafting something with your hands.</p>
+
+        <p>This blog is not a DIY tutorial on building a mandir, as there are plenty of those available online. Rather, it’s a reflection on how our combined experience in Product Ownership, Business Analysis, and IT risk management helped us approach the project with an Agile mindset, ensuring we met our goals, stayed within budget, and delivered a finished product we could both be proud of.</p>
+
+        <p>By also allowing space for future enhancements—like the bells and smart RGB lighting—we were able to apply the Agile principle of flexibility, ensuring that the mandir could evolve and grow over time.</p>
+
+        <p>If you’ve read this and feel that something is incorrect, or if you have any feedback to offer, I’d love to hear from you. Please feel free to share your thoughts. I’m open to learning and growing from your input.</p>
     </div>
-  </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Praveen's Blog | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
